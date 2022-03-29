@@ -1,24 +1,28 @@
 #include<stdio.h>
 #include<math.h>
+
 void investments(int value);
 void fd_interest(float p, float r, float t);
 void rd_interest(float p, float r, float t);
 void sip_interest(float p, float r, float t);
+
 int main()
 {
     int option;
-    printf("Select one of the investment options:\n1. Fixed Deposit (FD)\n2. Recurring Deposit (RD)\n3. Systematic Investment Plan\n");
+    printf("Select one of the investment options:\n1. Fixed Deposit (FD)\n2. Recurring Deposit (RD)\n3. Systematic Investment Plan\nPress 1,2 or 3: ");
     scanf("%d",&option);
     investments(option);
     return 0;
 }
+
 void investments(int value)
 {
     float principal,roi,time;
+
     switch(value)
     {
         case 1:
-            printf("Enter the Total Investment (Rupees): ");
+            printf("You have chosen FD.\nEnter the Total Investment (Rupees): ");
             scanf("%f",&principal);
 
             printf("Enter the Rate Of Interest (%%): ");
@@ -31,7 +35,7 @@ void investments(int value)
             break;
 
         case 2:
-            printf("Enter the Monthly Investment (Rupees): ");
+            printf("You have chosen RD.\nEnter the Monthly Investment (Rupees): ");
             scanf("%f",&principal);
 
             printf("Enter the Rate Of Interest (%%): ");
@@ -44,7 +48,7 @@ void investments(int value)
             break;
 
         case 3:
-            printf("Enter the Monthly Investment (Rupees): ");
+            printf("You have chosen SIP.\nEnter the Monthly Investment (Rupees): ");
             scanf("%f",&principal);
 
             printf("Enter the Expected Return Rate (%%): ");
@@ -60,6 +64,7 @@ void investments(int value)
             printf("\nYou cannot select anything other than the two investment options.");
     }
 }
+
 void fd_interest(float p, float r, float t)
 {
     float calc1=1+(r/400);
@@ -67,6 +72,7 @@ void fd_interest(float p, float r, float t)
     float final=calc2*p;
     printf("\nThe Maturity Amount at the end of %.2f months is Rupees %.2f",t,final);
 }
+
 void rd_interest(float p, float r, float t)
 {
     float i=r/400;
@@ -78,6 +84,7 @@ void rd_interest(float p, float r, float t)
     float final=numerator/denominator;
     printf("\nThe Maturity Amount at the end of %.2f months is Rupees %.2f",t,final);
 }
+
 void sip_interest(float p, float r, float t)
 {
     float i=r/1200;
