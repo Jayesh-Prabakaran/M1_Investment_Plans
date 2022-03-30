@@ -2,7 +2,7 @@
 #<TAB>command
 
 Build:
-	gcc add_integers.c test_add_integers.c ../unity/unity.c -I../unity
+	gcc project_main.c test_project_main.c ../Unity/unity.c -I../unity
 
 run:
 	./a.out

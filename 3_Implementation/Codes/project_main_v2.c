@@ -7,7 +7,7 @@ float rd_interest(float p, float r, float t);
 float sip_interest(float p, float r, float t);
 float lp_interest(float p, float r, float t);
 
-void manual_interest_test()
+void interest_test()
 {
     if(1086==fd_interest(1000,10,10))
     printf("\nFD Interest function works.\n");

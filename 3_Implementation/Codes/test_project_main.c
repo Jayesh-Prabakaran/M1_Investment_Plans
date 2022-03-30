@@ -1,7 +1,5 @@
 #include "unity.h"
 
-extern void manual_interest_test();
-
 void setUp(void)
 {
 }
@@ -20,7 +18,6 @@ void automated_interest_test()
 
 int main(void)
 {
-    manual_interest_test();
 
     UnityBegin(NULL);
 
