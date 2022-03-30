@@ -17,7 +17,7 @@ The objective of this project is to help the user to find the investment plan wi
 ## Folder Structure
 |Folder|Description|
 |------|-----------|
-|'0_Certificates'|Certificates gained from the learning sources|
-|'1_Requirements'|Readme files about the requirements and analysis of this project|
-|'2_Architecture'|Flowchart depicting the flow of execution|
-|'3_Implementation'|.c files, .h file, make file and doxygen documentation|
+|`0_Certificates`|Certificates gained from the learning sources|
+|`1_Requirements`|Readme files about the requirements and analysis of this project|
+|`2_Architecture`|Flowchart depicting the flow of execution|
+|`3_Implementation`|.c files, .h file, make file and doxygen documentation|
