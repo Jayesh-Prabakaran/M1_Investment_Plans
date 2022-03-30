@@ -2,7 +2,7 @@
 #<TAB>command
 
 Build:
-	gcc project_main.c test_project_main.c ../Unity/unity.c -I../unity
+	gcc Returns.c Test_Returns.c -lm ../unity/unity.c -I../unity
 
 run:
 	./a.out
