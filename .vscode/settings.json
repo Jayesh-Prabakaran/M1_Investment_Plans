@@ -1,5 +1,7 @@
 {
     "files.associations": {
-        "returns.h": "c"
+        "returns.h": "c",
+        "math.h": "c",
+        "investment_returns.h": "c"
     }
 }

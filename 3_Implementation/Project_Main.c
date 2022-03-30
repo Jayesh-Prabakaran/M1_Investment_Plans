@@ -1,11 +1,22 @@
 #include<stdio.h>
 #include<math.h>
 
+/**
+ * @brief this function contains all the investment plans and their returns to be calculated
+ * 
+ * @param value 
+ */
 void investments(int value);
 void fd_interest(float p, float r, float t);
 void rd_interest(float p, float r, float t);
 void sip_interest(float p, float r, float t);
 void lp_interest(float p, float r, float t);
+
+/**
+ * @brief start of the application
+ * 
+ * @return int 
+ */
 
 int main()
 {
@@ -79,6 +90,14 @@ void investments(int value)
     }
 }
 
+/**
+ * @brief function to find the returns for FD
+ * 
+ * @param p the investment amount
+ * @param r the rate of interest
+ * @param t the time period
+ */
+
 void fd_interest(float p, float r, float t)
 {
     float calc1=1+(r/400);
@@ -86,6 +105,14 @@ void fd_interest(float p, float r, float t)
     float final=calc2*p;
     printf("\nThe Maturity Amount at the end of %.2f months is Rupees %.2f",t,round(final));
 }
+
+/**
+ * @brief function to find the returns for RD
+ * 
+ * @param p the investment amount
+ * @param r the rate of interest
+ * @param t the time period
+ */
 
 void rd_interest(float p, float r, float t)
 {
@@ -99,6 +126,14 @@ void rd_interest(float p, float r, float t)
     printf("\nThe Maturity Amount at the end of %.2f months is Rupees %.2f",t,round(final));
 }
 
+/**
+ * @brief function to find the returns for SIP
+ * 
+ * @param p the investment amount
+ * @param r the rate of interest
+ * @param t the time period
+ */
+
 void sip_interest(float p, float r, float t)
 {
     float i=r/1200;
@@ -108,6 +143,14 @@ void sip_interest(float p, float r, float t)
     float final=p*calc3*(1+i);
     printf("\nThe Maturity Amount at the end of %.2f months is Rupees %.2f",t,round(final));
 }
+
+/**
+ * @brief function to find the returns for LP
+ * 
+ * @param p the investment amount
+ * @param r the rate of interest
+ * @param t the time period
+ */
 
 void lp_interest(float p, float r, float t)
 {
